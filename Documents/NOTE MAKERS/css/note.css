@@ -1,0 +1,231 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+
+}
+body {
+    background-color: #171415;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    color: #ff2693;
+
+}
+
+#logo {
+    margin: 10px -70px;
+    font-family: 'baloo bhai',cursive;
+    /* border: 2px solid red; */
+}
+
+#logo h4 {
+    margin: 0px -10px;
+    padding: 2px 34px;
+     font-family: 'baloo bhai',cursive;
+    color: #c96f12;
+    border-radius: 20px;
+    border: 0.1px solid white;
+    box-shadow: -0.5px 2px 33px;
+}
+#logo h4:hover{
+    box-shadow: 0.5px 1px 5px;
+    /* transition: all 0.1s ease-in 0s; */
+   
+}
+
+#logo img {
+    height: 80px;
+    margin: 5px 50px;
+    border-radius: 25px;
+    box-shadow: 1.5px 3px 10px;
+
+}
+
+#logo img h4 {
+    font-family: 'Bree Serif', serif;
+    color: #e7f4f3;
+    /* padding: 10; */
+    margin: 2px 50px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content;
+}
+.navbar ul {
+    /* font-family: 'baloo bhai',cursive; */
+    display: flex;
+    text-decoration: none;
+    margin: 25px 150px;
+    font-size: 25px;
+    color: #a39d9d;
+
+}
+
+.navbar ul a {
+    /* font-family: 'baloo bhai',cursive; */
+    display: flex;
+    text-decoration: none;
+    margin: 10px;
+    border: 2px solid #833560;
+    /* background-color: #2e3439; */
+    border-radius: 20px;
+    background-color: #162f35;
+    color: #a39d9d;
+    box-shadow: 0.5px 2px 8px;
+    transition: all 0.1s ease-out 0s;
+}
+
+.navbar ul a li {
+    font-family: 'baloo bhai',cursive;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    margin: 0px 25px;
+    color: #2b989d;
+
+}
+.navbar ul :hover {
+    /* margin: 8px 10px; */
+    background-color: #d3d3d3;
+    color: #ff80c0;
+}
+
+/*  HOME  */
+
+#home h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 1px;
+    margin: 60px;
+    color: #baa0af;
+    border: 2px solid #614030;
+    border-radius: 15px;
+    padding: 10px 0;
+    margin: 70px 270px;
+    background-color: #2e3439;
+
+}
+#home p {
+    padding: 25px 10px;
+    color: #917f7f;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Bree Serif', serif;
+}
+.homebtn {
+    margin: 5px 700px;
+    padding: 5px 20px;
+    border: 2px solid #f40000;
+    background-color: #ad9a9a;
+    text-align: center;
+    color: #a42455;
+    border-radius: 25px;
+    font-size: 10px;
+    cursor: pointer;
+    color: #261135;
+}
+
+.homebtn:hover {
+    background-color: white;
+
+}
+
+/* INFO BAR */
+
+.infobar {
+    /* border:2px solid red; */
+    margin: 20px;
+    padding: 2px;
+
+}
+
+.infohead {
+
+    display: flex;
+    /* border:2px solid red; */
+    justify-content: center;
+    align-items: center;
+    margin: 50px 10px;
+    padding: px 100px;
+
+}
+
+.infobar h2 {
+    display: flex;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+    justify-content: center;
+    margin: 1px;
+    font-size: 20px;
+    padding: 12px;
+    color: #30c6e3;
+
+}
+
+.infobar #box {
+    border: 2px solid #ff4e4e;
+    border-radius: 20px;
+    background-color: #1b3441;
+    /* transition:all 0.4s ease-out 0s; */
+    color: #cc9393;
+    margin: 50px;
+    padding: 50px;
+    height: 200px;
+    width: 400px;
+    text-align: center;
+
+    box-shadow: 0.5px 4px 20px;
+    transition: all 0.4s ease-out 0s;
+
+}
+
+.infobar #box:hover {
+    background-color: #808080;
+    color:black;
+    border-radius: 15px;
+}
+
+.infobar .btn:hover {
+    background-color: white;
+
+}
+
+.infohead .btn {
+    border: 2px solid #8e3232;
+    margin: 60px 85px;
+    border-radius: 15px;
+    padding: 3px 6px;
+    background-color: #908383;
+}
+.infohead .btn:hover {
+    background-color: white;
+}
+.infohead #box a {
+    text-decoration: none;
+}
+
+.infohead #box a h2 {
+    border: 2px solid #b63d3d;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.infohead #box a h2:hover {
+    color:black;
+}
+
+/* Footer */
+footer{
+    display:flex;
+    justify-content: center;
+
+}

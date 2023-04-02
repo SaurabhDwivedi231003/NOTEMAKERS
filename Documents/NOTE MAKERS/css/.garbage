@@ -1,0 +1,54 @@
+
+/* INFO BAR */
+
+.infobar {
+
+    display: flex;
+    /* border:2px solid red; */
+    justify-content: center;
+    align-items: center;
+    /* margin:10px 10px; */
+    /* padding:10px 10px; */
+
+}
+.info {
+    border: 2px solid red;
+    margin: 50px;
+    padding: 50px;
+    height: 200px;
+    width: 500px;
+}
+
+.info a h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    margin:10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+<span class="infobar">
+<div class="info">
+    <a href=""> <h2> B.Sc </h2></a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facere.</p>
+</div>
+<div class="info">
+    <a href=""><h2> B.TECH </h2></a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facere.</p>
+</div>
+<div class="info">
+    <a href=""> <h2> B.Pharma </h2></a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facere.</p>
+</div>
+</span>
