@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  /* scroll-behavior: smooth; */
+
 }
 
 .App-logo {
@@ -39,4 +41,110 @@
 
 .blank{
   border:2px solid red;
+}
+
+.social-container {
+  background: #f3f3f3;
+  padding: 5px 10px;
+  border-radius: 25px;
+  color:black;
+}
+.social-container .made {
+  border: none;
+  border-radius:10px;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  margin: 1px 2px;
+  opacity: 0.6;
+  transition: 0.1s;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+}
+.social-container h5:hover {
+  opacity: 1;
+}
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+  margin: 5px 10px;
+  /* padding : 5px 50px; */
+
+}
+a.social:hover {
+  transform: translateY(-5px);
+}
+a.youtube {
+    color: #c4302b;
+}
+
+a.facebook {
+    color: #4968ad;
+}
+
+a.twitter {
+    color: #1DA1F2.;
+}
+
+a.instagram {
+    color: #da1c16;
+}
+a.linkedin {
+    color: #0072b1;
+}
+a.github {
+    color: #171515;
+}
+
+.container h2{
+  text-align: center;
+  /* border:2px solid red; */
+  background: #d0e2ff;
+  font-family: "Times New Roman", Times, serif;
+
+  border-radius:10px;
+}
+.container button{
+  border-radius: 10px;
+  background: #feba05;
+}
+.container textarea{
+  border-radius: 15px;
+  background: #e9e9e9;
+}
+#summary{
+  border-radius: 10px;
+  /* border:2px solid red;/ */
+  /* display:inline-block; */
+  /* flex-direction: column; */
+  background: #e9e9e9;
+  /* margin : 100px 5px; */
+  padding : 1px 70px;
+}
+.navbar-brand{
+background-color: #5fd1be;
+border-radius:10px;
+margin:5px 10px;
+padding:5px 50px;
+position:sticky;
+font-family: "Times New Roman" ;
+
+}
+/* #nav-link{
+background-color: #5fd1be;
+border-radius:10px;
+margin:5px 10px;
+padding:5px 10px;
+font-family: "Times New Roman" ;
+} */
+/* #navbar-main{
+  border-radius:15px;
+  margin:15px 10px;
+  position:sticky;
+  
+} */
+.container-fluid{
+  background: #eddcef;
+  border-radius:10px;
 }

@@ -1,36 +1,95 @@
 //import logo from './logo.svg';
+//imrs for import from react
 import './App.css';
+import TextForm from './components/TextForm';
+import Navbar from './components/Navbar';
+// import About from './components/About';
+import { useState } from 'react';
+import Alert from './components/Alert';
+import React from "react";
+import SocialFollow from "./SocialFollow";
 
-function App() {
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom";
+
+function App(){
+  
+const [mode, setMode] = useState('light'); // tells whether dark mode enable or not
+  const toggleMode = ()=>{
+    if(mode === 'light'){
+      setMode('dark');
+document.body.style.backgroundColor = '#19222DD6';
+document.body.style.color ='black';    // by using this we can change text color
+showAlert("Dark mode has been enabled " , "success");
+document.title = 'TextUtils - Comfort Mode' ;
+
+// setInterval(() => {        // agar users ki attention leke koi msg dena h toh
+//   document.title = 'Install TextUtils Now !';
+// } ,1000);
+
+const myClassElement = document.querySelector('.container-fluid');
+myClassElement.style.backgroundColor = '#28272A';
+
+// const myClassElement2 = document.querySelector('.navbar-brand');
+// myClassElement2.style.backgroundColor = '#4B7D7D';
+
+// const myClassElement3 = document.querySelector('.social-container');
+// myClassElement3.style.backgroundColor = '#5F6567';
+
+  }
+  else{
+    setMode('light');
+    document.body.style.backgroundColor ='white ';
+    document.body.style.color ='black';
+    showAlert("Light mode has been enabled " , "success");
+    // document.title = 'TextUtils - Comfort Mode' ;
+
+    } 
+  }
+
+{/* ALERT STATE */}
+const [alert, setAlert] = useState(null);
+
+const showAlert = (message , type) => {
+  setAlert({
+       msg : message ,
+       type :  type
+      });
+      setTimeout(() => {
+        setAlert(null);
+      }, 1500);
+}
+
   return (
+  <>
+{/* <Navbar title = "TEXTUTILS" aboutText = "ABOUT US"/> */}
+{/* <About /> */}
 
-    <>
- <nav className="navbar navbar-expand-lg bg-body-tertiary">
-  <div className="container-fluid">
-    <a className="navbar-brand" href="/">TextUtils</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/">About</a>
-        </li>
-       
-      </ul>
-      <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
-      </form>
+{/* <Router> */}
+<Navbar title = "TEXTUTILS" mode={mode} toggleMode = {toggleMode} />
+<Alert alert={alert}/>
+<div className = "container my-3" > 
+{/* <Switch> */}
+      {/* <Route exact path="/about" > */}
+        {/* <About /> */}
+      {/* </Route> */}
+
+      {/* <Route exact path='/'> */}
+      <TextForm  showAlert={showAlert} heading = "Enter the text to analyze below " mode={mode} />
+      {/* </Route> */}
+      {/* </Switch> */}
+      
+      <SocialFollow />
     </div>
-  </div>
-</nav> 
+    {/* </Router> */}
     </>
-
   );
 }
 
 export default App;
+
+
